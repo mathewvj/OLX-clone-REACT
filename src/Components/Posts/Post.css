@@ -1,0 +1,130 @@
+.moreView {
+  margin: 16px;
+  padding: 16px;
+  background-color: #ebeeef;
+  border-radius: 4px;
+}
+
+/* Heading */
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.heading span {
+  font-size: 24px;
+  color: #002f34;
+  font-weight: bold;
+}
+
+.heading span:last-child {
+  font-size: 14px;
+  color: #002f34;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* Cards Container */
+.moreView .cards,
+.recommendations .cards {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.moreView .cards::-webkit-scrollbar {
+  height: 6px;
+}
+
+.moreView .cards::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.cards p{
+  color: #002f34;
+}
+
+/* Card Styling */
+.card {
+  flex: 0 0 auto;
+  max-width: 222px;
+  width: 222px;
+  height: 270px;
+  background: white;
+  padding: 13px;
+  border: 1px solid #002f34;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .favorite {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .image img {
+  height: 100px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Card Content */
+.card .content {
+  margin-top: 10px;
+}
+
+.card .content .rate {
+  font-size: 18px;
+  font-weight: bold;
+  color: #002f34;
+}
+
+.card .content .kilometer {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.card .content .name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #002f34;
+}
+
+/* Date */
+.card .date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: #5a5a5a;
+}
+
+/* Recommendations Section */
+.recommendations {
+  margin: 16px;
+  background-color: white;
+  padding: 20px;
+}
+
+.recommendations .heading span {
+  font-size: 24px;
+  color: #002f34;
+  font-weight: bold;
+}
